@@ -333,7 +333,7 @@ body {
     line-height: 24px;
 }
 
-.services__btn,  .projects__btn {
+.services__btn, .projects__btn {
     margin: 65px 0 0 0;
 }
 
@@ -431,12 +431,13 @@ body {
 }
 
 /* PROBLEMS */
+
 .problems {
     padding: 180px 0 225px;
 }
 
-.problems__body {
-}
+.problems__body {}
+
 .problems__title {
     max-width: 570px;
     font-size: 38px;
@@ -457,6 +458,53 @@ body {
     margin: 0 0 0 11px;
     font-weight: 900;
 }
+
+/* INFO */
+
+.info {
+    padding: 80px 0 100px;
+}
+
+.info__body {
+    display: flex;
+}
+
+.info__content {
+    margin: 74px 0 0;
+}
+
+.info__content img {
+    margin: 0 60px 0 0;
+}
+
+.info__col {
+    flex: 100%;
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__row input {
+    flex: 50%;
+}
+
+.form__row input[type="text"]:nth-child(1) {
+    margin: 0 20px 20px 0;
+}
+
+.info input:not(.btn), .info textarea{
+    margin: 0 0 20px 0;
+    padding: 20px;
+    font-size: 15px;
+    color: #666;
+}
+
+.info textarea {
+    width: 100%;
+}
+
 
 /* MEDIA */
 
@@ -496,6 +544,13 @@ body {
     .project__item {
         margin: 5px;
     }
+    /* INFO */
+    .info__col:first-child {
+        display: none;
+    }
+    .info__content {
+        margin: 10px 0 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -518,7 +573,7 @@ body {
         padding: 30px 0;
     }
     /* WHY */
-    .why {
+    .why, .info {
         padding: 50px 0;
     }
     .why .grid {
@@ -554,9 +609,14 @@ body {
         font-size: 35px;
     }
     /* PROJECTS */
-    .project {}
-
     .project__item {
         flex: 0 0 100%;
+    }
+    /* INFO */
+    .form__row {
+        flex-direction: column;
+    }
+    .form__row input {
+        margin-right: 0 !important;
     }
 }
