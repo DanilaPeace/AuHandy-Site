@@ -179,6 +179,13 @@
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
+/* ACCORDION */
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+}
+
 /* MEDIA */
 
 @media screen and (max-width: 1115px) {}
