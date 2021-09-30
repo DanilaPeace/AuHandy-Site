@@ -252,8 +252,6 @@ body {
     display: flex;
 }
 
-.offer__img {}
-
 .offer__text {
     padding: 0 0 0 14px;
 }
@@ -436,8 +434,6 @@ body {
     padding: 180px 0 225px;
 }
 
-.problems__body {}
-
 .problems__title {
     max-width: 570px;
     font-size: 38px;
@@ -505,6 +501,20 @@ body {
     width: 100%;
 }
 
+/* LABELS */
+.labels {
+    padding: 45px 0;
+}
+.labels__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.label__item {
+    margin: 10px 0;
+}
 
 /* MEDIA */
 

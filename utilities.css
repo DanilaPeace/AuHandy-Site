@@ -9,6 +9,7 @@
     padding: 20px 38px;
     cursor: pointer;
     transition: all .5s ease;
+    user-select: none;
 }
 
 .btn_outline {
@@ -39,15 +40,11 @@
     height: 100%;
 }
 
-.grid-2 {}
-
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
 }
 
 /* HEADING-BLOCK */
-
-.heading-block {}
 
 .heading-block__title {
     font-size: 30px;
@@ -88,8 +85,6 @@
 }
 
 /* NAV */
-
-.navigation {}
 
 .nav {
     display: flex;
