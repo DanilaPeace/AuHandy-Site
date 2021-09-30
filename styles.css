@@ -79,91 +79,6 @@ body {
     margin: 0 auto;
 }
 
-/* BUTTONS */
-
-.btn {
-    font-size: 15px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    padding: 20px 38px;
-    margin-right: 15px;
-    cursor: pointer;
-    transition: all .5s ease;
-}
-
-.btn_outline {
-    outline: 2px solid #fff;
-}
-
-.btn_fill {
-    background-color: #ffb619;
-}
-
-.btn_outline:hover {
-    background-color: #ffb619;
-    outline: 0;
-}
-
-/* GRID */
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid-2 {}
-
-.grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-/* HEADING-BLOCK */
-
-.heading-block {}
-
-.heading-block__title {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 0 0 20px 0;
-    position: relative;
-}
-
-.heading-block__title::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    position: absolute;
-    bottom: 0;
-}
-
-.heading-block__title_starting-blue::after {
-    background-color: #1c3e9b;
-    left: 0;
-}
-
-.heading-block__title_center-white {
-    text-align: center;
-}
-
-.heading-block__title_center-white::after {
-    background-color: #fff;
-    left: 50%;
-    margin-left: -30px;
-}
-
-.heading-block__subtitle {
-    font-size: 15px;
-    line-height: 24px;
-    margin: 22px 0 0 0;
-}
-
 /* SOCIAL */
 
 .social {
@@ -208,7 +123,7 @@ body {
     align-items: center;
 }
 
-.header-body nav {
+.header__navigation {
     display: flex;
 }
 
@@ -231,25 +146,10 @@ body {
     font-size: 14px;
 }
 
-.header__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    flex-wrap: wrap;
-    margin-left: 30px;
-}
-
-.header__nav li {
+.header li {
     padding: 0 15px;
 }
 
-.header__link {
-    text-transform: uppercase;
-    color: #393939;
-    font-weight: bold;
-    font-size: 16px;
-}
 
 .header__search {
     margin-left: 30px;
@@ -337,6 +237,11 @@ body {
     color: #333;
 }
 
+.why-heading-block__subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 22px 0 0 0;
+}
 .why__offers {
     margin: 40px 0 0;
 }
@@ -377,7 +282,7 @@ body {
     margin: 65px 0 0;
 }
 
-.heading-block__title {
+.services .heading-block__title {
     color: #fff;
 }
 
@@ -435,6 +340,26 @@ body {
 .services__btn a {
     color: #fff;
 }
+
+/* PROJECTS */
+.projects {
+    padding: 80px 100px;
+}
+
+.projects__body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects__navigation {
+
+}
+.projects__heading-block {
+    
+}
+
+
 
 /* MEDIA */
 
