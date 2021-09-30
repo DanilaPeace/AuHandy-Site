@@ -656,6 +656,26 @@ body {
     text-transform: uppercase;
 }
 
+/* AUTHOR RIGHTS */
+.rights {
+    background-color: #0d0d0d;
+    padding: 25px 0;
+}
+.container {
+}
+.autor-rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #606060;
+    font-size: 15px;
+}
+
+.autor-rights span {
+    color: #ffb619;
+    margin: 0 0 0 3px;
+}
+
 /* MEDIA */
 
 @media screen and (max-width: 1115px) {
