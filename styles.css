@@ -490,7 +490,7 @@ body {
     margin: 0 20px 20px 0;
 }
 
-.info input:not(.btn), .info textarea{
+.info input:not(.btn), .info textarea {
     margin: 0 0 20px 0;
     padding: 20px;
     font-size: 15px;
@@ -502,10 +502,12 @@ body {
 }
 
 /* LABELS */
+
 .labels {
     padding: 45px 0;
 }
-.labels__body{
+
+.labels__body {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -514,6 +516,144 @@ body {
 
 .label__item {
     margin: 10px 0;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 60px 0 80px;
+    background-color: #1a1a1a;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__col {
+    flex: 30%;
+    margin: 10px 15px;
+}
+
+.footer__contact {}
+
+.footer__service {}
+
+.footer__coupon {}
+
+.col {}
+
+.col__title{
+    margin: 0 0 36px 0;
+}
+
+.col__title, .contact-item__title {
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ============================ */
+
+.contact {}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.contact-item__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 14px 0 0;
+}
+.contact-item__img i {
+    font-size: 20px;
+    background-color: #fff;
+    color: #ffb619;
+    background-color: #252525;
+}
+
+.contact-item__content {}
+
+.contact-item__text, .service-item__text {
+    font-size: 15px;
+    color: #999;
+}
+
+/* ============================ */
+
+.service {}
+
+.service__row {
+    display: flex;
+}
+
+.service__col {
+    flex: 50%;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.service-item__img {
+    margin: 0 14px 0 0;
+}
+
+.service-item__img i {
+    color: #ffb619;
+    font-size: 16px;
+}
+
+/* ============================ */
+
+.coupon {
+    color: #ccc;
+    text-align: center;
+    padding: 40px 0 30px;
+    border: 1px dotted #404040;
+    max-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon__title {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.coupon__title span{
+    font-size: 55px;
+    color: #ffb619;
+    font-weight: 900;
+    margin: 0 15px;
+}
+
+.coupon__subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 60px;
+}
+
+.coupon__text {
+    font-size: 16px;
+}
+
+.coupon__text span{
+    color: #ffb619;
+    text-transform: uppercase;
 }
 
 /* MEDIA */
