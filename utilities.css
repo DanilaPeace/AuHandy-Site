@@ -18,9 +18,17 @@
 
 .btn_fill {
     background-color: #ffb619;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn_fill a {
+.btn__link {
+    margin: 0 0 0 11px;
+    font-weight: 900;
+}
+
+.btn a {
     color: #fff;
 }
 
@@ -114,6 +122,7 @@
 @media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 546px) {
+    
     .navigation {
         display: none;
     }

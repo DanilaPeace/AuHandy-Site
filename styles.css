@@ -202,6 +202,30 @@ body {
     margin: 0 15px 0 0;
 }
 
+/* INFO-TEL */
+
+.info-tel {
+    padding: 70px 0;
+}
+
+.info-tel__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-tel__text {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    line-height: 28px;
+}
+
+.info-tel__btn {
+    margin: 20px 0 0;
+}
+
 /* WHY SECTION */
 
 .why {
@@ -444,15 +468,7 @@ body {
 }
 
 .problems__btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     margin: 40px 0 0;
-}
-
-.problems__btn .btn__link {
-    margin: 0 0 0 11px;
-    font-weight: 900;
 }
 
 /* INFO */
@@ -522,6 +538,7 @@ body {
     transition: all .5s ease-in-out;
     cursor: s;
 }
+
 .label__item img:hover {
     transform: scale(1.1);
 }
@@ -551,7 +568,7 @@ body {
 
 .col {}
 
-.col__title{
+.col__title {
     margin: 0 0 36px 0;
 }
 
@@ -583,6 +600,7 @@ body {
     height: 50px;
     margin: 0 14px 0 0;
 }
+
 .contact-item__img i {
     font-size: 20px;
     background-color: #fff;
@@ -642,7 +660,7 @@ body {
     text-transform: uppercase;
 }
 
-.coupon__title span{
+.coupon__title span {
     font-size: 55px;
     color: #ffb619;
     font-weight: 900;
@@ -659,18 +677,20 @@ body {
     font-size: 16px;
 }
 
-.coupon__text span{
+.coupon__text span {
     color: #ffb619;
     text-transform: uppercase;
 }
 
 /* AUTHOR RIGHTS */
+
 .rights {
     background-color: #0d0d0d;
     padding: 25px 0;
 }
-.container {
-}
+
+.container {}
+
 .autor-rights {
     display: flex;
     justify-content: center;
@@ -705,8 +725,12 @@ body {
         display: none;
     }
     /* SERVICES */
-    .services__content {
+    .services__content .services-item{
         display: none;
+    }
+
+    .services-item_active {
+        display: block !important;
     }
 }
 
@@ -717,6 +741,14 @@ body {
     /* SHOWCASE */
     .showcase, .problems {
         padding: 70px 0;
+    }
+    /* INFO-TEL */
+    .info-tel {
+        padding: 30px 0;
+    }
+    /* SERVICES */
+    .services-item{
+
     }
     /* PROJECTS */
     .project__item {
@@ -790,11 +822,26 @@ body {
     .project__item {
         flex: 0 0 100%;
     }
+
+    /* SERVICES */
+    /* .services:not(.services-item_active) {
+        display: none;
+    } */
     /* INFO */
     .form__row {
         flex-direction: column;
     }
     .form__row input {
         margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .showcase .btn {
+        padding: 10px 30px;
+    }
+
+    .services__arrow {
+        display: none;
     }
 }
