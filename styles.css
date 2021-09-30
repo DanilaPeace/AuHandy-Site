@@ -400,7 +400,7 @@ body {
     font-size: 18px;
 }
 
-.item__body {
+.project__item .item__body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -428,6 +428,34 @@ body {
 .project__item .item__title, .project__item .item__text, .project__item .search {
     opacity: 0;
     transition: all .5s ease-in-out;
+}
+
+/* PROBLEMS */
+.problems {
+    padding: 180px 0 225px;
+}
+
+.problems__body {
+}
+.problems__title {
+    max-width: 570px;
+    font-size: 38px;
+    line-height: 52px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.problems__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0;
+}
+
+.problems__btn .btn__link {
+    margin: 0 0 0 11px;
+    font-weight: 900;
 }
 
 /* MEDIA */
@@ -461,7 +489,7 @@ body {
         max-width: 750px;
     }
     /* SHOWCASE */
-    .showcase {
+    .showcase, .problems {
         padding: 70px 0;
     }
     /* PROJECTS */
@@ -476,13 +504,13 @@ body {
         padding: 0 10px;
     }
     /* SHOWCASE */
-    .showcase {
+    .showcase, .problems {
         padding: 50px 0;
     }
     .showcase__text {
         margin-top: 30px;
     }
-    .showcase__title {
+    .showcase__title, .problems__title {
         line-height: 40px;
     }
     /* SERVICES */
@@ -522,7 +550,7 @@ body {
     .showcase__img {
         display: none;
     }
-    .showcase__title {
+    .showcase__title, .problems__title {
         font-size: 35px;
     }
     /* PROJECTS */
