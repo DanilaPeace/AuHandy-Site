@@ -219,9 +219,3 @@
         transition: max-height .8s ease;
     }
 }
-
-@media screen and (max-width: 546px) {
-    .navigation {
-        display: none;
-    }
-}
