@@ -28,7 +28,7 @@
     transform: scale(1.09);
 }
 
-.btn_fill i{
+.btn_fill i {
     font-size: 25px;
 }
 
@@ -179,13 +179,6 @@
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
-/* ACCORDION */
-.accordion__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .8s ease;
-}
-
 /* MEDIA */
 
 @media screen and (max-width: 1115px) {}
@@ -199,6 +192,12 @@
 @media screen and (max-width: 768px) {
     .nav__link {
         font-size: 14px;
+    }
+    /* ACCORDION */
+    .accordion__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .8s ease;
     }
 }
 

@@ -788,6 +788,34 @@ body {
     .projects {
         padding: 30px 0;
     }
+
+    /* ACCORDION */
+    .accordion__title{
+        position: relative;
+        padding: 0 0 0 20px ;
+        transition: margin .5s ease;
+    }
+
+    .col__title {
+        margin: 0;
+    }
+
+    .col__title::before {
+        content: "\276F";
+        position: absolute;
+        left: 0;
+        color: #ffb619;
+        transform: rotate(90deg);
+        transition: transform 0.7s ease;
+    }
+
+    .accordion[data-open="true"] .col__title::before {
+        transform: rotate(-90deg);
+    }
+
+    .accordion[data-open="true"] .accordion__title {
+        margin: 0 0 30px 0;
+    }
 }
 
 @media screen and (max-width: 546px) {
