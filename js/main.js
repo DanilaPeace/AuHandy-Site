@@ -81,3 +81,4 @@ function validateForms(selector, rules) {
 }
 
 validateForms('.popup__form', {name: {required: true}, email : {required: true, email: true}, phone: {required: true}});
+validateForms('.info__form', {name: {required: true}, email : {required: true, email: true}, phone: {required: true}});
