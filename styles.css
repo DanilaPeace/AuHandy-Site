@@ -696,6 +696,17 @@ body {
 
 /* MEDIA */
 
+@media screen and (max-width: 1240px) {
+    /* SERVICES */
+    .services__content .services-item{
+        display: none;
+    }
+
+    .services-item_active {
+        display: block !important;
+    }
+}   
+
 @media screen and (max-width: 1115px) {
     .container {
         max-width: 970px;
@@ -713,14 +724,6 @@ body {
     }
     .why__img {
         display: none;
-    }
-    /* SERVICES */
-    .services__content .services-item{
-        display: none;
-    }
-
-    .services-item_active {
-        display: block !important;
     }
 }
 
@@ -818,6 +821,9 @@ body {
     }
 }
 
+
+
+
 @media screen and (max-width: 546px) {
     /* BUTTONS */
     .btn {
@@ -849,7 +855,7 @@ body {
     }
 
     .project__item_active {
-        display: block;
+        display: flex;
     }
 
     .services__btn, .projects__btn {
