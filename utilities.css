@@ -133,6 +133,7 @@
     height: 80px;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    z-index: 1000;
 }
 
 .menu-btn__burger {
@@ -203,6 +204,7 @@
 
 @media screen and (max-width: 546px) {
     .navigation {
-        display: none;
+        visibility: hidden;
+        height: 0;
     }
 }
