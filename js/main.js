@@ -22,7 +22,7 @@ openPopup.addEventListener('click', (event) => {
     document.body.style.overflow = 'hidden';
 });
 
-closePopup.addEventListener('click', function(event){
+closePopup.addEventListener('click', function (event) {
     popup.classList.remove('active');
     document.body.style.overflow = '';
 });
@@ -75,3 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const telInput = document.querySelectorAll('input[type="tel"]');
 const telInputMask = new Inputmask('+7 (999) 999-99-99');
 telInputMask.mask(telInput);
+
+function validateForms(selector, rules) {
+    new window.JustValidate(selector, { rules: rules });
+}
+
+validateForms('.popup__form', {name: {required: true}, email : {required: true, email: true}, phone: {required: true}});

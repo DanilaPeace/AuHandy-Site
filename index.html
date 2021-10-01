@@ -141,9 +141,9 @@
                                 <p class="hidden">
                                     <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
                                 </p>
-                                <input type="text" name="name" placeholder="Name">
-                                <input type="email" name="email" placeholder="Email">
-                                <input type="tel" name="phone" placeholder="Phone">
+                                <input type="text" name="name" placeholder="Name" data-validate-field="name">
+                                <input type="email" name="email" placeholder="Email" data-validate-field="email" >
+                                <input type="tel" name="phone" placeholder="Phone" data-validate-field="phone">
                                 <button class="btn btn_fill">Submit</button>
                             </form>
                             <div class="popup__close">
@@ -594,6 +594,7 @@
             </div>
         </div>
     </section>
+    <script src="js/validate.js"></script>
     <script src="js/inputMask.js"></script>
     <script src="js/main.js"></script>
 </body>
