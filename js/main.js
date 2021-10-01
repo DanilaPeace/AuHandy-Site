@@ -5,9 +5,11 @@ menuBtn.addEventListener('click', () => {
     if (!menuOpen) {
         menuBtn.classList.add('open');
         menuOpen = true;
+        document.body.style.overflow = 'hidden';
     } else {
         menuBtn.classList.remove('open');
         menuOpen = false;
+        document.body.style.overflow = '';
     }
 });
 
