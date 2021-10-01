@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="popup.css">
@@ -122,10 +124,10 @@
                     </div>
                     <div class="showcase__buttons">
                         <div class="showcase__btn open_popup btn btn_outline">
-                                Learn More
+                            Learn More
                         </div>
                         <div class="showcase__btn btn btn_outline">
-                                Get A Quote
+                            Get A Quote
                         </div>
                     </div>
                 </div>
@@ -133,7 +135,12 @@
                     <div class="popup__container">
                         <div class="popup__content">
                             <h1>Welcome to Us</h1>
-                            <form class="popup__form" action="">
+                            <form class="popup__form" name="popup-contact" method="POST" netlify-honeypot="bot-field"
+                                data-netlify="true">
+                                <input type="hidden" name="form-name" value="popup-contact">
+                                <p class="hidden">
+                                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                                </p>
                                 <input type="text" name="name" placeholder="Name">
                                 <input type="email" name="email" placeholder="Email">
                                 <input type="tel" name="phone" placeholder="Phone">
@@ -446,16 +453,16 @@
         <div class="container">
             <div class="labels__body">
                 <div class="label__item">
-                        <img src="./images/Object1.png" alt="">
+                    <img src="./images/Object1.png" alt="">
                 </div>
                 <div class="label__item">
-                        <img src="./images/Object2.png" alt="">
+                    <img src="./images/Object2.png" alt="">
                 </div>
                 <div class="label__item">
-                        <img src="./images/Object3.png" alt="">
+                    <img src="./images/Object3.png" alt="">
                 </div>
                 <div class="label__item">
-                        <img src="./images/Object4.png" alt="">
+                    <img src="./images/Object4.png" alt="">
                 </div>
             </div>
         </div>
@@ -505,7 +512,7 @@
                     </div>
                 </div>
                 <div class="footer__col col">
-                    <div class="footer-accordion accordion"> 
+                    <div class="footer-accordion accordion">
                         <div class="col__title accordion__title">Our Services</div>
                         <div class="footer__service accordion__content service">
                             <div class="service__row">
@@ -587,7 +594,8 @@
             </div>
         </div>
     </section>
-    <script src="main.js"></script>
+    <script src="js/inputMask.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

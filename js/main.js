@@ -69,3 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     smothHeight('.accordion', '.accordion__title', '.accordion__content');
 });
+
+
+// inputMask
+const telInput = document.querySelectorAll('input[type="tel"]');
+const telInputMask = new Inputmask('+7 (999) 999-99-99');
+telInputMask.mask(telInput);
