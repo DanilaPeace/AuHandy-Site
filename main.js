@@ -19,10 +19,12 @@ const popup = document.querySelector(".popup");
 openPopup.addEventListener('click', (event) => {
     event.preventDefault();
     popup.classList.add('active');
+    document.body.style.overflow = 'hidden';
 });
 
 closePopup.addEventListener('click', function(event){
     popup.classList.remove('active');
+    document.body.style.overflow = '';
 });
 
 // accordion
